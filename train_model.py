@@ -14,7 +14,7 @@ spark = SparkSession.builder \
     .config("spark.hadoop.fs.defaultFS", "hdfs://localhost:9000") \
     .getOrCreate()
 
-API_KEY = "43d64229413cc934538918dd45a80f87"
+API_KEY = "api-key"
 BASE_URL = "https://api.themoviedb.org/3"
 
 # Function to fetch movies from TMDB
