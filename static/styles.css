@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/static/background.png');
+    background-size: auto; /* Keeps the original image size */
+    background-repeat: no-repeat;
+    background-position: center; /* Aligns image to the center */
+    background-attachment: fixed; /* Keeps image fixed on scroll */
+    display: flex;
+    flex-direction: column; /* Ensures vertical stacking */
+    align-items: center;
+    justify-content: flex-start; /* Starts content from the top */
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 20px; /* Adds some spacing at the top */
+}
+
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #555;
+}
+
+#movies-container, #recommendations-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.movie-card, .recommend-card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.movie-card:hover, .recommend-card:hover {
+    background: #ddd;
+    transform: scale(1.05);
+}
+
+p {
+    color: #777;
+}
