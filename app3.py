@@ -12,7 +12,7 @@ app = Flask(__name__)
 spark = SparkSession.builder.appName("MovieRecommendation").getOrCreate()
 
 # TMDB API Configuration
-API_KEY = "43d64229413cc934538918dd45a80f87"
+API_KEY = "API KEY"
 BASE_URL = "https://api.themoviedb.org/3"
 
 def fetch_latest_movies():
